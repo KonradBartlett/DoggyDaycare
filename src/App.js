@@ -35,7 +35,7 @@ function App() {
           <Services/>
           <Team />
           <Location />
-          <Hours />
+          {/* <Hours /> */}
           <Contact />
           <Gallery />
           <Footer/>

@@ -2,11 +2,57 @@
 #team{
     background: var(--bg);
     color: var(--text);
+    display: grid;
+    place-items: center;
+
+    h1{
+        margin: 0;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .person{
+        border: 2px solid var(--border-color);
+        border-radius: 9px;
+        padding: 2em;
+
+
+        .crop{
+            width: 250px;
+            overflow: hidden;
+            img{
+                position: relative;
+                right: 60%;
+            }
+        }
+    }
 
 }
 
 // desktop
 @media (min-width: 640px){
+    
+
+    .person{
+        display: flex;
+
+        .info{
+            min-width: 30ch;
+        }
+    }
+}
+  
+// phone
+@media (max-width: 1639px){
+    #team{
+        .grid{
+            grid-template-columns: 1fr;
+        }
+    }
 }
   
 // phone

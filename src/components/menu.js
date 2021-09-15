@@ -26,6 +26,20 @@ export const Menu = () => {
         }
     }
 
+    const Links = () => {
+        return (
+            <>
+                <a className="link dark_hover" href="#!" onClick={() => {clickLink('top');}}>Home</a>
+                <a className="link dark_hover" href="#!" onClick={() => {clickLink('services');}}>Services Offered</a>
+                <a className="link dark_hover" href="#!" onClick={() => {clickLink('team');}}>Meet The Team</a>
+                <a className="link dark_hover" href="#!" onClick={() => {clickLink('location');}}>Location</a>
+                {/* <a className="link dark_hover" href="#!" onClick={() => {clickLink('hours');}}>Operating Hours</a> */}
+                <a className="link dark_hover" href="#!" onClick={() => {clickLink('contact');}}>Contact</a>
+                <a className="link dark_hover" href="#!" onClick={() => {clickLink('gallery');}}>Gallery</a>
+            </>
+        );
+    }
+
     return (
         <div style={{'flexGrow': '1'}}>
             <div className={`menu large ${showMenu}`}>
@@ -33,13 +47,7 @@ export const Menu = () => {
                     <Icon title="toggle menu" onClick={toggleMenu}/>
                 </div>
                 <div id="menu_body">
-                    <a className="link dark_hover" href="#!" onClick={() => {clickLink('top');}}>Home</a>
-                    <a className="link dark_hover" href="#!" onClick={() => {clickLink('services');}}>Services Offered</a>
-                    <a className="link dark_hover" href="#!" onClick={() => {clickLink('team');}}>Meet The Team</a>
-                    <a className="link dark_hover" href="#!" onClick={() => {clickLink('location');}}>Location</a>
-                    <a className="link dark_hover" href="#!" onClick={() => {clickLink('hours');}}>Operating Hours</a>
-                    <a className="link dark_hover" href="#!" onClick={() => {clickLink('contact');}}>Contact</a>
-                    <a className="link dark_hover" href="#!" onClick={() => {clickLink('hours');}}>Gallery</a>
+                    <Links />
                 </div>
             </div>
             <div className={`small_menu small`}>
@@ -47,13 +55,7 @@ export const Menu = () => {
                     <Icon title="toggle menu" onClick={toggleMenu}/>
                 </div>
                 <div id="small_menu_body" className={showMenu}>
-                    <a className="link dark_hover" href="#!" onClick={() => {clickLink('top');}}>Home</a>
-                    <a className="link dark_hover" href="#!" onClick={() => {clickLink('services');}}>Services Offered</a>
-                    <a className="link dark_hover" href="#!" onClick={() => {clickLink('team');}}>Meet The Team</a>
-                    <a className="link dark_hover" href="#!" onClick={() => {clickLink('location');}}>Location</a>
-                    <a className="link dark_hover" href="#!" onClick={() => {clickLink('hours');}}>Operating Hours</a>
-                    <a className="link dark_hover" href="#!" onClick={() => {clickLink('contact');}}>Contact</a>
-                    <a className="link dark_hover" href="#!" onClick={() => {clickLink('gallery');}}>Gallery</a>
+                    <Links />
                 </div>
             </div>
         </div>
