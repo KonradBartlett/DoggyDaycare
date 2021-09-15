@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import './App.scss';
+import './app.scss';
 
 import { Background } from './components/background';
 import { Footer } from './components/footer';
