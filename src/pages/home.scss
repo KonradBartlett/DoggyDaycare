@@ -1,0 +1,15 @@
+#home{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding-top: 3em;
+    height: calc(100vh - 6em);
+    h1{
+        background: var(--border-color);
+        padding: 2em 3em;
+        opacity: 0.8;
+        hr{
+            border: 2px solid var(--text);
+        }
+    }
+}

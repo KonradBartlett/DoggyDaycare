@@ -1,0 +1,22 @@
+#background {
+    position: absolute;
+    bottom: -4px;
+    height: 90vh;
+    width: calc(100vw - 10px);
+    min-width: 1000px;
+    z-index: -1;
+
+    #sun{
+      // z-index: -1;
+      position: absolute;
+      left: 20vw;
+      width: 10em;
+    }
+
+    #valley{
+      z-index: 1;
+      transform: scaleX(-1);
+    }
+    
+
+}
