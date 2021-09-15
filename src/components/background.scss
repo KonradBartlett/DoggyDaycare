@@ -2,6 +2,7 @@
     position: fixed;
     bottom: 0;
     height: 90vh;
+    min-height: calc(100vh - 6em);
     width: calc(100vw - 10px);
     min-width: 2000px;
     z-index: -1;
