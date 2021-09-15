@@ -8,7 +8,7 @@
     overflow: hidden;
 
     #sun{
-      // z-index: -1;
+      z-index: 2;
       position: absolute;
       left: 20vw;
       width: 10em;
@@ -17,7 +17,10 @@
     #valley{
       z-index: 1;
       transform: scaleX(-1);
-      filter: sepia(1)
+      filter: sepia(1);
+      bottom: 0;
+      min-height: calc(100vh - 6em);
+      position: absolute;
     }
     
 }
