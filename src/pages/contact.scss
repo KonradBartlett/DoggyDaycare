@@ -2,6 +2,31 @@
 #contact{
     background: var(--bg);
     color: var(--text);
+    text-align: center;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        text-align: left;
+        
+        input, textarea{
+            width: 50%;
+        }
+
+        input[type="submit"]{
+            margin-top: 1em;
+            padding: 1em 2em;
+            border-radius: 3px;
+            border: 2px solid var(--border-color);
+            background: var(--bg);
+            cursor: pointer;
+        }
+
+        label{
+            margin-top: 1em;
+        }
+    }
 
 }
 
@@ -11,4 +36,11 @@
   
 // phone
 @media (max-width: 639px){
+    #contact{
+        form{
+            input, textarea{
+                width: 100%;
+            }
+        }
+    }
 }

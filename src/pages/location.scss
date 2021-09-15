@@ -3,10 +3,24 @@
     background: var(--bg);
     color: var(--text);
 
+
+    p{
+        max-width: 50ch;
+    }
+
+    .map{
+        border-radius: 9px;
+        border: 2px solid var(--border-color);
+        max-width: 100%;
+    }
 }
 
 // desktop
 @media (min-width: 640px){
+    #location{
+        display: flex;
+        justify-content: center;
+    }
 }
   
 // phone

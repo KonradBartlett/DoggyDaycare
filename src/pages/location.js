@@ -4,13 +4,16 @@ export function Location() {
     return (
         <div className="page">
             <div id="location" className=" card ">
-                <h2>Our Location</h2>
-                <p>
-                    A description of where the doggy daycare is based<br/>
-                    A description of where you’re willing to go out to meet clients to pick up their dogs etc<br/>
-                    A Google maps iframe with a pin on the location of the doggy daycare<br/>
-                    Display flex row<br/>
-                </p>
+                <div>
+                    <h2>Our Location</h2>
+                    <p>
+                        Doggy Daycare is based out of the beautiful sunshine coast.<br/>
+                        We can drive anywhere within 50km to pick up your dog for a walk, or for a home visit.<br/>
+                    </p>
+                </div>
+                <iframe className="map" width="600" height="450" loading="lazy" allowfullscreen
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgcgbobMsfVQRp2t86PDhTFY&key=AIzaSyCMFq9T-wqZqHLjrcRppF60be58RN-LAUk"></iframe>
+                
             </div>
         </div>
     );

@@ -7,7 +7,7 @@ export const Background = () =>
     return(
         <div id="background">
             <Valley/>
-            <Sun/>
+            <Sun className="large"/>
         </div>
 
     );
